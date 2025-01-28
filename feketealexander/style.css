@@ -321,3 +321,35 @@ main > ul {
 html, body {
     cursor: url("cursor.ico"), default;
 }
+.snowverlay {
+	/* Position depending how you want it to behave on scroll */
+	position: fixed;  
+	/* position: fixed; */
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	pointer-events: none;
+	}
+	
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.bar {
+	position: sticky;
+	top: -0px;
+	padding: 0;
+    margin: -8px;
+    background: #316812;
+    background: -moz-linear-gradient(left,#681212 0,#ff0000 25%,#ff6600 75%,#722400 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,#681212),color-stop(25%,#ff0000),color-stop(75%,#ff6600),color-stop(100%,#722400));
+    background: -webkit-linear-gradient(left,#681212 0,#ff0000 25%,#ff6600 75%,#722400 100%);
+    background: -o-linear-gradient(left,#681212 0,#ff0000 25%,#ff6600 75%,#722400 100%);
+    background: -ms-linear-gradient(left,#681212 0,#ff0000 25%,#ff6600 75%,#722400 100%);
+    background: linear-gradient(to right,#681212 0,#ff0000 25%,#ff6600 75%,#722400 100%);
+    height: 3px;
+    border-bottom: 1px solid #000;
+}
